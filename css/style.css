@@ -1,12 +1,25 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	background-color: #621402;
 	font-family: 'Roboto', sans-serif;
+	color: #fff;
 }
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
 }
 .header {
+	background: linear-gradient(
+			180deg,
+			rgba(98, 20, 2, 0.31) 0%,
+			#621402 85.62%
+		),
+		url('../img/bg.jpg') no-repeat center top/cover;
+	min-height: 100vh;
+}
+.nav-bar {
 	display: flex;
 	align-items: center;
 	padding: 30px 0;
@@ -21,12 +34,11 @@ body {
 	margin-right: 25px;
 }
 .menu-link {
-	color: #fff;
 	text-decoration: none;
+	color: #fff;
 }
 .user {
 	margin-left: auto;
-	color: #fff;
 	display: flex;
 	align-items: center;
 }
@@ -35,4 +47,113 @@ body {
 	height: 33px;
 	border-radius: 50%;
 	margin-left: 11px;
+}
+.film {
+	padding-top: 60px;
+	display: flex;
+	align-items: center;
+}
+.film-title-small {
+	font-size: 24px;
+	line-height: 150%;
+	opacity: 0.5;
+}
+.film-title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	margin: 11px 0 23px;
+}
+.film-description {
+	font-size: 16px;
+	line-height: 150%;
+	max-width: 560px;
+}
+.film-details {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+}
+.time {
+	display: flex;
+	align-items: center;
+}
+.time-icon {
+	margin-right: 14px;
+}
+.film-trailler {
+	margin: 0 auto;
+}
+.rating {
+	display: flex;
+	align-items: center;
+	margin-left: 34px;
+}
+.rating-icon {
+	margin-right: 14px;
+}
+.raiting-current {
+	font-size: 24px;
+	line-height: 150%;
+}
+.session {
+	margin-top: 62px;
+	padding: 46px 0 63px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.session-label {
+	display: block;
+	margin-bottom: 20px;
+}
+.session-date-block {
+	display: flex;
+}
+.session-date-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	margin-right: 15px;
+	transition: background 0.2s, color 0.2s;
+}
+.session-month {
+	font-size: 16px;
+	line-height: 16px;
+}
+.session-day {
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 35px;
+}
+.session-week {
+	font-size: 19px;
+	line-height: 22px;
+}
+.session-date-item:hover {
+	background: #fe8e05;
+	color: #621402;
+	cursor: pointer;
+}
+
+.select {
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 18px;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.select-cinema {
+	min-width: 470px;
 }
